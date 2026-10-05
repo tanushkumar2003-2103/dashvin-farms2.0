@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Farm Fresh Dairy Essentials — Dashvin Farms</title>
+  <meta name="description" content="Shop pure A2 Gir cow milk, earthen pot curd, traditional Vedic Bilona ghee, and soft malai paneer from Dashvin Farms. Daily morning cold-chain delivery.">
+  <meta name="theme-color" content="#1E3022">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    /* Dedicated Shop Page Header */
+    .shop-hero {
+      padding-top: 8rem;
+      padding-bottom: 3.5rem;
+      background: linear-gradient(180deg, var(--color-primary-dark) 0%, #2A4230 100%);
+      color: var(--color-cream);
+      text-align: center;
+    }
+    .shop-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+      padding: 1.25rem 1.5rem;
+      background: var(--color-cream-light);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+    }
+    .shop-sort-select {
+      padding: 0.6rem 1.25rem;
+      border-radius: var(--radius-full);
+      border: 1.5px solid var(--color-border);
+      background: var(--color-white);
+      color: var(--color-charcoal);
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header scrolled" id="navbar">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Dashvin Farms Home">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3C7.5 3 4 6.5 4 11c0 2.8 1.4 5.2 3.6 6.7L7 21h10l-.6-3.3C18.6 16.2 20 13.8 20 11c0-4.5-3.5-8-8-8zm0 2c3.3 0 6 2.7 6 6 0 2.2-1.2 4.1-3 5.2V19h-6v-2.8C7.2 15.1 6 13.2 6 11c0-3.3 2.7-6 6-6z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">DASHVIN FARMS</span>
+          <span class="brand-tagline">Pure Dairy • 10+ Years</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#our-farm" class="nav-link">Our Farm</a>
+        <a href="index.html#journey" class="nav-link">Farm Journey</a>
+        <a href="shop.html" class="nav-link active">Shop</a>
+        <a href="story.html" class="nav-link">Our Story</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="harvest-status">
+          <span class="pulse-dot"></span>
+          <span>4:30 AM Fresh Harvest</span>
+        </div>
+
+        <button class="nav-action-btn open-search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button class="nav-action-btn open-cart-btn" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge" style="display:none;">0</span>
+        </button>
+
+        <button class="mobile-toggle" aria-label="Toggle menu" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Shop Hero Banner -->
+    <section class="shop-hero">
+      <div class="container">
+        <div class="eyebrow eyebrow--light">FARM TO DOORSTEP</div>
+        <h1 class="heading-display heading-display--light" style="font-size:clamp(2.5rem, 5vw, 3.75rem);">
+          FARM FRESH ESSENTIALS
+        </h1>
+        <p class="lead-text lead-text--light" style="margin: 0.75rem auto 0;">
+          Harvested each morning at 4:30 AM. Chilled at 4°C and delivered in sterile glass packaging.
+        </p>
+      </div>
+    </section>
+
+    <!-- Products Catalog Section -->
+    <section class="section bg-cream">
+      <div class="container">
+        <!-- Controls Bar -->
+        <div class="shop-controls">
+          <div class="product-filters" style="margin-bottom:0;">
+            <button class="filter-btn active" data-category="all">All Items</button>
+            <button class="filter-btn" data-category="milk">Fresh Milk</button>
+            <button class="filter-btn" data-category="curd">Earthen Curd</button>
+            <button class="filter-btn" data-category="ghee">Desi Ghee</button>
+            <button class="filter-btn" data-category="paneer">Malai Paneer</button>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <label for="shopSort" style="font-size:0.8125rem; font-weight:700; color:var(--color-primary-dark); text-transform:uppercase;">Sort By:</label>
+            <select id="shopSort" class="shop-sort-select">
+              <option value="featured">Featured Essentials</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Customer Rating</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="shopCatalogGrid">
+          <!-- Dynamically populated -->
+        </div>
+
+        <!-- Subscription Banner -->
+        <div style="margin-top: 4rem; background: var(--color-primary-dark); color: var(--color-cream); border-radius: var(--radius-lg); padding: clamp(2rem, 5vw, 3.5rem); display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2rem; align-items: center;">
+          <div>
+            <div class="eyebrow eyebrow--light">DAILY RECURRING SUBSCRIPTION</div>
+            <h3 class="heading-lg heading-lg--light" style="font-size: clamp(1.75rem, 3.5vw, 2.5rem); margin-bottom: 0.75rem;">
+              Never Run Out of Pure Farm Milk
+            </h3>
+            <p style="color: rgba(248, 245, 237, 0.8); line-height: 1.7; margin-bottom: 1.5rem;">
+              Set your morning frequency (Daily, Alternate Days, or Weekdays). Pause anytime with a single click. Enjoy guaranteed sunrise deliveries before 7:00 AM with zero delivery charges.
+            </p>
+            <a href="contact.html?type=subscription" class="btn btn-gold">
+              Set Up Farm Subscription
+            </a>
+          </div>
+          <div style="background: rgba(248, 245, 237, 0.08); border: 1px solid rgba(248, 245, 237, 0.2); border-radius: var(--radius-md); padding: 1.75rem;">
+            <h4 style="color: var(--color-beige); margin-bottom: 1rem; font-size: 1.0625rem;">Subscription Benefits:</h4>
+            <ul style="display:flex; flex-direction:column; gap:0.75rem; font-size:0.875rem; color:rgba(248, 245, 237, 0.85);">
+              <li>✓ Guaranteed priority 5:30 AM delivery slot</li>
+              <li>✓ Free sterile glass bottle swap system</li>
+              <li>✓ Instant WhatsApp pause & resume controls</li>
+              <li>✓ 10% monthly savings on all farm essentials</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Dashvin Farms. All rights reserved. Pure dairy, rooted in tradition.</div>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="index.html" style="color:inherit;">Home</a>
+          <a href="story.html" style="color:inherit;">Our Story</a>
+          <a href="contact.html" style="color:inherit;">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals & Drawers -->
+  <div class="cart-backdrop"></div>
+  <aside class="cart-drawer" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>
+        <span>Your Farm Basket</span>
+        <span class="cart-header-count">(0 items)</span>
+      </h3>
+      <button class="cart-close-btn" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-delivery-bar">
+      <div class="delivery-status-text">Add items for Free Morning Delivery</div>
+      <div class="delivery-progress-track">
+        <div class="delivery-progress-fill"></div>
+      </div>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-empty-state" style="display:none;">
+      <h4 style="font-size:1.125rem; font-weight:700;">Your Basket is Empty</h4>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal-row">
+        <span>Estimated Subtotal</span>
+        <span class="cart-subtotal-amount">₹0</span>
+      </div>
+      <button class="cart-checkout-btn">
+        <span>Proceed to Checkout</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="modal-backdrop" id="quickViewModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="quickViewClose">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="quickview-grid" id="quickViewDetails"></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="searchModal">
+    <div class="modal-content" style="max-width:600px; padding:2rem;">
+      <button class="modal-close-btn" id="searchCloseBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <h3 style="font-family:var(--font-serif); font-size:1.5rem; margin-bottom:1rem; color:var(--color-primary-dark);">Search Fresh Dairy</h3>
+      <input type="search" id="navSearchInput" placeholder="Search milk, curd, ghee..." style="width:100%; padding:0.875rem 1.25rem; border-radius:var(--radius-full); border:1.5px solid var(--color-border); background:var(--color-white);">
+      <div id="searchResults" style="max-height:300px; overflow-y:auto; margin-top:1rem;"></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="checkoutModal">
+    <div class="modal-content checkout-modal-content">
+      <button class="modal-close-btn" id="checkoutCloseBtn"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+      <div class="eyebrow">CHECKOUT & ORDER</div>
+      <h2 class="heading-lg" style="margin-bottom:0.5rem;">SCHEDULE YOUR MORNING DELIVERY</h2>
+      <div class="checkout-grid">
+        <form class="checkout-form" id="checkoutForm">
+          <div class="form-row">
+            <div class="form-group"><label>Full Name</label><input type="text" id="orderName" class="form-input" required placeholder="Ramesh Chandra"></div>
+            <div class="form-group"><label>Phone</label><input type="tel" id="orderPhone" class="form-input" required placeholder="+91 80991 12111"></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" id="orderEmail" class="form-input" required placeholder="ramesh@example.com"></div>
+          <div class="form-group"><label>Address</label><input type="text" id="orderAddress" class="form-input" required placeholder="Apartment, Street"></div>
+          <div class="form-row">
+            <div class="form-group"><label>City / Location</label><input type="text" id="orderCity" class="form-input" value="Moinabad / Hyderabad" required></div>
+            <div class="form-group"><label>Pincode</label><input type="text" id="orderPincode" class="form-input" placeholder="501504" required></div>
+          </div>
+          <div class="form-group">
+            <label>Morning Slot</label>
+            <select id="orderSlot" class="form-input">
+              <option>Morning 5:30 AM - 7:00 AM</option>
+              <option>Morning 7:00 AM - 8:30 AM</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:0.5rem; padding:1rem;" id="checkoutSubmitBtn">ORDER NOW</button>
+        </form>
+        <div class="order-summary-box">
+          <h4 style="font-family:var(--font-serif); font-size:1.1875rem; color:var(--color-primary-dark);">Summary</h4>
+          <div class="order-summary-items" id="checkoutSummaryItems"></div>
+          <div style="display:flex; justify-content:space-between; font-size:1.125rem; font-weight:700; color:var(--color-primary-dark); padding-top:0.75rem; border-top:1px solid var(--color-border);">
+            <span>Total</span>
+            <span id="checkoutTotal" style="font-family:var(--font-serif); color:var(--color-primary); font-size:1.375rem;">₹0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Specific Sorting logic for Shop page
+    document.addEventListener('DOMContentLoaded', () => {
+      const sortSelect = document.getElementById('shopSort');
+      const catalogGrid = document.querySelector('.products-grid');
+
+      function applyShopFilters() {
+        const activeCategory = document.querySelector('.shop-controls .filter-btn.active')?.dataset.category || 'all';
+        const sortVal = sortSelect?.value || 'featured';
+
+        let list = activeCategory === 'all' 
+          ? [...DASHVIN_PRODUCTS] 
+          : DASHVIN_PRODUCTS.filter(p => p.category === activeCategory);
+
+        if (sortVal === 'price-low') {
+          list.sort((a, b) => a.price - b.price);
+        } else if (sortVal === 'price-high') {
+          list.sort((a, b) => b.price - a.price);
+        } else if (sortVal === 'rating') {
+          list.sort((a, b) => b.rating - a.rating);
+        }
+
+        catalogGrid.innerHTML = list.map(p => createProductCardHTML(p)).join('');
+        // Rehook card listeners
+        if (typeof attachProductCardListeners === 'function') {
+          attachProductCardListeners();
+        }
+      }
+
+      // Filter button clicks
+      document.querySelectorAll('.shop-controls .filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.shop-controls .filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          applyShopFilters();
+        });
+      });
+
+      if (sortSelect) {
+        sortSelect.addEventListener('change', applyShopFilters);
+      }
+
+      // Check URL parameters for category query (e.g. ?cat=ghee)
+      const urlParams = new URLSearchParams(window.location.search);
+      const catParam = urlParams.get('cat');
+      if (catParam) {
+        const targetBtn = document.querySelector(`.shop-controls .filter-btn[data-category="${catParam}"]`);
+        if (targetBtn) {
+          document.querySelectorAll('.shop-controls .filter-btn').forEach(b => b.classList.remove('active'));
+          targetBtn.classList.add('active');
+        }
+      }
+
+      // Initial catalog render
+      applyShopFilters();
+    });
+  </script>
+</body>
+</html>

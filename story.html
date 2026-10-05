@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Farm Story & Heritage — Dashvin Farms</title>
+  <meta name="description" content="Discover the 10+ year heritage of Dashvin Farms. Ethical Gir cow rearing, traditional Vedic Bilona churning, spotless cowsheds, and lab-tested purity.">
+  <meta name="theme-color" content="#1E3022">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .story-hero {
+      position: relative;
+      padding-top: clamp(8rem, 14vw, 12rem);
+      padding-bottom: clamp(4rem, 8vw, 6rem);
+      background: linear-gradient(180deg, var(--color-primary-dark) 0%, #253829 100%);
+      color: var(--color-cream);
+      text-align: center;
+    }
+    .story-section {
+      padding: clamp(3.5rem, 7vw, 6rem) 0;
+    }
+    .story-dual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: center;
+    }
+    .bilona-step-card {
+      background: var(--color-cream-light);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      position: relative;
+    }
+    .bilona-step-num {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-gold);
+      margin-bottom: 0.5rem;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .gallery-item {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      box-shadow: var(--shadow-md);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    @media (max-width: 900px) {
+      .story-dual-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 540px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header scrolled" id="navbar">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Dashvin Farms Home">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24"><path d="M12 3C7.5 3 4 6.5 4 11c0 2.8 1.4 5.2 3.6 6.7L7 21h10l-.6-3.3C18.6 16.2 20 13.8 20 11c0-4.5-3.5-8-8-8zm0 2c3.3 0 6 2.7 6 6 0 2.2-1.2 4.1-3 5.2V19h-6v-2.8C7.2 15.1 6 13.2 6 11c0-3.3 2.7-6 6-6z"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">DASHVIN FARMS</span>
+          <span class="brand-tagline">Pure Dairy • 10+ Years</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#our-farm" class="nav-link">Our Farm</a>
+        <a href="index.html#journey" class="nav-link">Farm Journey</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="story.html" class="nav-link active">Our Story</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-action-btn open-cart-btn" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge" style="display:none;">0</span>
+        </button>
+        <button class="mobile-toggle" aria-label="Toggle menu" id="mobileToggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Story Hero Banner -->
+    <section class="story-hero">
+      <div class="container">
+        <div class="eyebrow eyebrow--light">ROOTED IN NATURE</div>
+        <h1 class="heading-display heading-display--light">THE DASHVIN STORY</h1>
+        <p class="lead-text lead-text--light" style="margin: 0.75rem auto 0; max-width:680px;">
+          How a family commitment to unadulterated food blossomed into 10+ years of conscious dairy stewardship in the lush countryside.
+        </p>
+      </div>
+    </section>
+
+    <!-- Chapter 1: The Beginning -->
+    <section class="story-section bg-cream">
+      <div class="container">
+        <div class="story-dual-grid">
+          <div>
+            <div class="eyebrow">CHAPTER ONE</div>
+            <h2 class="heading-lg" style="margin-bottom:1.25rem;">A Promise Made to Our Own Children</h2>
+            <p class="lead-text" style="margin-bottom:1rem;">
+              A decade ago, our founders witnessed the rapid industrialization of dairy in Indian cities—where milk was reconstituted from chemical milk powders, stripped of natural fats, and transported in heated plastic packets.
+            </p>
+            <p style="color:var(--color-muted); line-height:1.7; margin-bottom:1.5rem;">
+              We couldn't feed that to our own children. In 2014, we acquired pristine farmland outside the city, brought home our first herd of indigenous Gir cows, and vowed never to compromise on feed, animal welfare, or hygienic bottling. That family kitchen table became the founding ethos of Dashvin Farms.
+            </p>
+            <div style="display:flex; gap:2rem;">
+              <div>
+                <strong style="font-family:var(--font-serif); font-size:2rem; color:var(--color-primary); display:block;">2014</strong>
+                <span style="font-size:0.8125rem; color:var(--color-muted); font-weight:600;">Year Founded</span>
+              </div>
+              <div>
+                <strong style="font-family:var(--font-serif); font-size:2rem; color:var(--color-primary); display:block;">45+ Acres</strong>
+                <span style="font-size:0.8125rem; color:var(--color-muted); font-weight:600;">Organic Green Fodder</span>
+              </div>
+              <div>
+                <strong style="font-family:var(--font-serif); font-size:2rem; color:var(--color-primary); display:block;">0%</strong>
+                <span style="font-size:0.8125rem; color:var(--color-muted); font-weight:600;">Adulteration Tolerance</span>
+              </div>
+            </div>
+          </div>
+          <div class="intro-image-wrap">
+            <img src="assets/images/farm-intro.jpg" alt="Dashvin farm farmer with Gir cows" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 2: The Indigenous Gir & Murrah Breeds -->
+    <section class="story-section bg-cream-light">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">ANCESTRAL CATTLE BREEDS</div>
+          <h2 class="heading-lg">RESPECTING INDIGENOUS WISDOM</h2>
+          <p class="lead-text" style="margin: 0.75rem auto 0;">
+            Why we specifically nurture purebred Indian Gir cows and Murrah water buffaloes.
+          </p>
+        </div>
+
+        <div class="story-dual-grid" style="margin-bottom:3rem;">
+          <div class="intro-image-wrap">
+            <img src="assets/images/farm-pasture.jpg" alt="Gir cows and Murrah buffaloes grazing in pastures" loading="lazy">
+          </div>
+          <div>
+            <h3 class="heading-md" style="margin-bottom:0.75rem; color:var(--color-primary-dark);">
+              The Vedic Gir Cow (Bos Indicus)
+            </h3>
+            <p style="color:var(--color-muted); line-height:1.7; margin-bottom:1.25rem;">
+              Originating from the Gir hills of Kathiawar, the Gir cow is revered for its prominent hump and dewlap that naturally absorb sunlight. Unlike hybrid breeds, Gir milk naturally produces <strong>100% A2 beta-casein protein</strong>, which is gentle on human digestion, reduces bloating, and enhances natural immunity.
+            </p>
+            <h3 class="heading-md" style="margin-bottom:0.75rem; color:var(--color-primary-dark);">
+              The Resilient Murrah Buffalo
+            </h3>
+            <p style="color:var(--color-muted); line-height:1.7;">
+              Prized for its creamy, rich milk with healthy natural butterfats. We use fresh Murrah milk to create our velvety set curd (dahi) and artisanal malai paneer that retains its moisture and cloud-like tenderness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 3: The Ancient Bilona Method -->
+    <section class="story-section bg-dark">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow eyebrow--light">THE SACRED RECIPE</div>
+          <h2 class="heading-lg heading-lg--light">THE 5 STEPS OF VEDIC BILONA GHEE</h2>
+          <p class="lead-text lead-text--light" style="margin: 0.75rem auto 0;">
+            Commercial ghee is made by boiling leftover cream. Our Ghee is crafted using the ancient 5-stage Ayurvedic churning ritual.
+          </p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1.5rem;">
+          <div class="bilona-step-card" style="background:rgba(248, 245, 237, 0.08); border-color:rgba(216, 195, 154, 0.25); color:var(--color-cream);">
+            <div class="bilona-step-num">01</div>
+            <h4 style="color:var(--color-beige); margin-bottom:0.5rem; font-size:1.125rem;">Morning Milking</h4>
+            <p style="font-size:0.875rem; color:rgba(248, 245, 237, 0.75); line-height:1.5;">Pure A2 cow milk is collected fresh and boiled in sterilized earthenware vessels.</p>
+          </div>
+          <div class="bilona-step-card" style="background:rgba(248, 245, 237, 0.08); border-color:rgba(216, 195, 154, 0.25); color:var(--color-cream);">
+            <div class="bilona-step-num">02</div>
+            <h4 style="color:var(--color-beige); margin-bottom:0.5rem; font-size:1.125rem;">Natural Culturing</h4>
+            <p style="font-size:0.875rem; color:rgba(248, 245, 237, 0.75); line-height:1.5;">Inoculated with heritage curd culture and allowed to ferment overnight into whole curd.</p>
+          </div>
+          <div class="bilona-step-card" style="background:rgba(248, 245, 237, 0.08); border-color:rgba(216, 195, 154, 0.25); color:var(--color-cream);">
+            <div class="bilona-step-num">03</div>
+            <h4 style="color:var(--color-beige); margin-bottom:0.5rem; font-size:1.125rem;">Bilona Churning</h4>
+            <p style="font-size:0.875rem; color:rgba(248, 245, 237, 0.75); line-height:1.5;">Two-way wooden churner separates pure probiotic makkhan (butter) from buttermilk.</p>
+          </div>
+          <div class="bilona-step-card" style="background:rgba(248, 245, 237, 0.08); border-color:rgba(216, 195, 154, 0.25); color:var(--color-cream);">
+            <div class="bilona-step-num">04</div>
+            <h4 style="color:var(--color-beige); margin-bottom:0.5rem; font-size:1.125rem;">Low-Flame Simmer</h4>
+            <p style="font-size:0.875rem; color:rgba(248, 245, 237, 0.75); line-height:1.5;">Slow-cooked over natural cow-dung firewood until golden aromatic solids separate.</p>
+          </div>
+          <div class="bilona-step-card" style="background:rgba(248, 245, 237, 0.08); border-color:rgba(216, 195, 154, 0.25); color:var(--color-cream);">
+            <div class="bilona-step-num">05</div>
+            <h4 style="color:var(--color-beige); margin-bottom:0.5rem; font-size:1.125rem;">Danedaar Gold</h4>
+            <p style="font-size:0.875rem; color:rgba(248, 245, 237, 0.75); line-height:1.5;">Filtered through cotton cloth into glass jars, setting into exquisite granular crystals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 4: Farm Photography Gallery -->
+    <section class="story-section bg-cream">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">VISUAL DIARY</div>
+          <h2 class="heading-lg">LIFE AT DASHVIN FARMS</h2>
+          <p class="lead-text" style="margin: 0.75rem auto 0;">
+            A glimpse into the daily peace, sunlight, and devotion that define our sanctuary.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/images/farm-intro.jpg" alt="Gir cows eating green fodder" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/farm-pasture.jpg" alt="Pasture view with cattle grazing" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/farm-hygiene.jpg" alt="Stainless steel hygiene room" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/product-milk.jpg" alt="Fresh glass milk bottle" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/product-curd.jpg" alt="Terracotta set curd" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/farm-story.jpg" alt="Farm dusk lighting" loading="lazy">
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:3.5rem;">
+          <a href="shop.html" class="btn btn-primary">
+            Taste the Farm Difference
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Dashvin Farms. All rights reserved. Pure dairy, rooted in tradition.</div>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="index.html" style="color:inherit;">Home</a>
+          <a href="shop.html" style="color:inherit;">Shop</a>
+          <a href="contact.html" style="color:inherit;">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
